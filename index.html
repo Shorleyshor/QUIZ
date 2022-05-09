@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link>
+    <title>Code Quiz</title>
+    <script src="https://kit.fontawesome.com/ab0db9f687.js" 
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="main" id="main">
+        <h1 class="code-title">Code Quiz</h1>
+        <!--start button-->
+        <div class="button-div">
+            <button class="start-button" id="start-button">Start Quiz</button>
+        </div>
+        <!--rule section-->
+        <section class="container-section" id="info-section">
+            <header class="header">
+              <h1 class="content-section"><strong>Quiz Rules</strong></h1>
+              <div class="highscore-button">
+                <a href="highscore.html"></a>
+              </div>
+            </header>
+            <ol class="rules">
+                <li>
+                    You have 2 minutes to complete the quiz.
+                </li>
+                <li>
+                    Timer starts after you answer the first question.
+                </li>
+                <li>
+                    Every question you answer correctly gives you 10 seconds and for every wrong answers, 10 seconds will be deducted from the timer.
+                </li>
+                <li>
+                    Your scores is measured by the amount of seconds you have left after game is complete.
+                </li>
+                <li>
+                    The game is over after all questions are answered or when timer reaches 0.
+                </li>
+
+            </ol>
+            <div class="buttons">
+                <button class="Next">Next
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!--Question Section -->
+        <section class="container-section" id="questionnaires">
+            <header class="header">
+                <div class="title"> Quiz Application</div>
+                <div class="timer">
+                    <div class="time-left">TimeLeft</div>
+                    <div class="time-in-sec">15</div>
+                </div>
+                <div class="timw-line"></div>
+            </header>
+            <div>
+                <div class="question-text">
+                    
+                </div>
+                <div class="option-list">
+
+                </div>
+            </div>
+            <footer>
+                <div class="total-questions"></div>
+                <button class="next-button">Next Question
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </button>
+            </footer>
+        </section>
+        <!--RESULT BOX-->
+        <section class="result-box">
+            <div class="complete">You've Completed the Quiz</div>
+            <div class="acore-text"></div>
+            <div class="restart-buttons">
+                <button class="restart">Restart Quiz</button>
+                <button class="quit-button">Quit Quiz</button>
+            </div>
+        </section>
+
+    </main>
+    
+</body>
+</html>

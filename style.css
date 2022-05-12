@@ -13,7 +13,7 @@ body{
 .code-title {
     
 }
-::selection{
+::selection {
     color: rgb(244, 237, 237);
     background: #007bff;
 }
@@ -21,7 +21,7 @@ body{
 .start_btn,
 .info_box,
 .quiz_box
-.result_box{
+.result_box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,13 +32,13 @@ body{
 
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
-.result_box.activeResult{
+.result_box.activeResult {
     opacity: 1;
     z-index: 5;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
-.start_btn button{
+.start_btn button  {
     border-radius: 5px;
     font-size: 25px;
     font-weight: 500;
@@ -50,17 +50,17 @@ body{
     cursor: pointer;
 }
 
-.info_box{
+.info_box {
     width: 540px;
     background: #fff;
     border-radius: 5px;
-    transform: trabslate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
 }
 
-.info_box .info-title{
+.info_box .info-title {
     height: 58px;
     width: 100%;
     border-bottom: 1px solid lightgrey;
@@ -72,22 +72,22 @@ body{
     font-weight: 598;
 }
 
-.info_box .info-list{
+.info_box .info-list {
     padding: 15px 30px;
     
 }
 
-.info_box .info-list .info span{
-    font-weight: 590;
+.info_box .info-list .info span {
+    font-weight: 595;
     color: #87929e;
 }
 
-.info_box, .info-list, .info{
+/*.info_box, .info-list, .info {
     margin: 5px 0;
     font-size: 16px;
-}
+}*/
 
-.info_box .buttons{
+.info_box .buttons {
     height: 58px;
     display: flex;
     align-items: center;
@@ -95,12 +95,12 @@ body{
     padding: 0 29px;
     border-top: 1px solid lightgrey;
 }
-.info .buttons button{
-    margin: 0 4px;
-    height: 38px;
-    width: 97px;
+.info_box .buttons button {
+    margin: 0 5px;
+    height: 39px;
+    width: 98px;
     font-size: 15px;
-    font-weight: 498;
+    font-weight: 500;
     cursor: pointer;
     border: none;
     outline: none;
@@ -110,22 +110,22 @@ body{
 
 }
 
-.quiz_box{
+.quiz_box {
     width: 545px;
-    background: rgb(247, 245, 245);
-    border-radius: 4px;
+    background: #fff;
+    border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3 ease;
 }
 
-.quiz_box header{
+.quiz_box header {
     position: relative;
     z-index: 2;
     height: 68px;
-    padding: 0 25px;
-    background: rgb(251, 248, 248);
+    padding: 0 30px;
+    background: #fff;
     border-radius: 5px 5px 0 0;
     display: flex;
     align-items: center;
@@ -133,12 +133,12 @@ body{
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.1);
 }
 
-.quiz_box header .title{
+.quiz_box header .title {
     font-size: 18px;
     font-weight: 590;
 }
 
-.quiz_box header .timer{
+.quiz_box header .timer {
     color: #064990;
     background: #bfd5ed;
     border: 1px solid #b4d6f9;
@@ -152,13 +152,13 @@ body{
 
 }
 
-.quiz_box .timer .timer_left_txt{
+.quiz_box .timer .timer_left_txt {
     font-weight: 390;
     font-size: 16px;
     user-select: none;
 }
 
-.quiz_box header .timer .timer_sec{
+.quiz_box header .timer .timer_sec {
     font-size: 16px;
     font-weight: 485;
     height: 28px;
@@ -180,7 +180,7 @@ body{
     background: #007bff;
 }
 
-.section{
+section{
     padding: 25px 28px 20px 30px;
     background: #fff;
 }

@@ -13,8 +13,8 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--<main class="main" id="main">
-        <h1 class="code-title">Code Quiz</h1>-->
+    <main class="main" id="main">
+        <h1 class="code-title">Code Quiz</h1>
 
         <!--start button-->
         <div class="start_btn">
@@ -23,66 +23,70 @@
         
         <!--rule section-->
         <div class="info_box" id="info-section">
-            <header class="header">
-              <h1 class="info-title"><span><strong>Quiz Rules</strong></span></h1>
-              <div class="highscore-button">
-                <a href="highscore.html"></a>
-              </div>
-            </header>
-            <ul class="info-list">
-                <li class="info">
-                    You have 2 minutes to complete the quiz.
-                </li>
-                <li class="info">
-                    Timer starts after you answer the first question.
-                </li>
-                <li class="info">
-                    Every question you answer correctly gives you 10 seconds and for every wrong answers, 10 seconds will be deducted from the timer.
-                </li>
-                <li class="info">
-                    Your scores is measured by the amount of seconds you have left after game is complete.
-                </li>
-                <li class="info">
-                    The game is over after all questions are answered or when timer reaches 0.
-                </li>
-
-            </ul>
-            <div class="buttons">
-                <button class="next">Next
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </button>
+            <div class="info-title"><span><strong>Quiz Rules</strong></span>
             </div>
-        </section>
+            <div class="info-list">
+                <ul >
+                    <li class="info">
+                        You have 2 minutes to complete the quiz.
+                    </li>
+                    <li class="info">
+                        Timer starts after you answer the first question.
+                    </li>
+                    <li class="info">
+                        Every question you answer correctly gives you 10 seconds and for every wrong answers, 10 seconds will be deducted from the timer.
+                    </li>
+                    <li class="info">
+                        Your scores is measured by the amount of seconds you have left after game is complete.
+                    </li>
+                    <li class="info">
+                        The game is over after all questions are answered or when timer reaches 0.
+                    </li>
+    
+                </ul>
+                <div class="buttons">
+                    <button class="end">End Quiz
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </button>
+                    <button class="restart">Continue
+                        <i class="fa-solid fa-rotate"></i>
+                    </button>
+                </div>
+            </div>
 
         <!--Question Section -->
-        <section class="quiz_box" id="questionnaires">
+
+        <div class="quiz_box" id="questionnaires">
             <header class="header">
                 <div class="title">Quiz Application
 
                 </div>
                 <div class="timer">
-                    <div class="time_left_txt">TimeLeft</div>
+                    <div class="time_left_txt">Time Left</div>
                     <div class="time_sec">15</div>
                 </div>
                 <div class="time_line"></div>
             </header>
-            <div class="section">
+            <section>
                 <div class="que_text">
                     
                 </div>
                 <div class="option_list">
+                </div>
+            </section>
+
+            <footer>
+                <div class="total_que">
 
                 </div>
-            </div>
-            <footer>
-                <div class="total_que"></div>
-                <button class="next_btn">Next Question
-                    <i class="fa-solid fa-circle-chevron-right"></i>
-                </button>
+                <button class="next_btn">Next Qeustion</button>
             </footer>
-        </section>
+        </div>
+
+
         <!--RESULT BOX-->
-        <section class="result_box">
+
+        <div class="result_box">
             <div class="image">
                 <i class="fa-solid fa-trophy"></i>
 
@@ -90,16 +94,16 @@
             <div class="complete_text">You've Completed the Quiz
 
             </div>
-            <div class="score_text"></div>
-            <div class="restart-buttons">
-                <button class="restart">Restart Quiz
+            <div class="score_text">
 
-                </button>
-                <button class="quit">Quit Quiz
-
-                </button>
             </div>
-        </section>
+            <div class="buttons">
+                <button class="restart">Restart Quiz
+                </button>
+                <button class="end">Quit Quiz</button>
+            </div>
+
+        </div>
         <!--form section-->
         <!--<section class="section-container section-hide" id="form">
             <header class="header">

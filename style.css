@@ -172,7 +172,7 @@ body{
     user-select: none;
 }
 
-.quiz_box header .time_line{
+.quiz_box header .time_line {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -180,21 +180,26 @@ body{
     background: #007bff;
 }
 
-section{
+section {
     padding: 25px 28px 20px 30px;
     background: #fff;
 }
 
-.section .que_text{
+section .que_text {
     font-size: 25px;
     font-weight: 590;
 }
 
-.section .option_list .option{
+section .option_list {
+    padding: 20px 0px;
+    display: block;
+}
+
+section .option_list .option {
     background: aliceblue;
     border: 1px solid #95ccfc;
     border-radius: 5px;
-    padding: 8px 14px;
+    padding: 8px 15px;
     font-size: 17px;
     margin-bottom: 15px;
     cursor: pointer;
@@ -202,30 +207,35 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-.section .option_list .option:last-child{
+section .option_list .option:last-child {
     margin-bottom: opx;
 }
 
-.section .option_list .option:hover{
+section .option_list .option:hover {
     color: #024893;
     background: #cde3fb;
     border: 1px solid #b1d6fe;
 }
 
-.section .option_list .option.correct{
+section .option_list .option.correct {
     color: #19652b;
     background: #d8f4df;
     border: 1px solid #cbf1d4;
 }
 
-.section .option_list .option.disable{
+section .option_list .option.incorrect {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+section .option_list .option.disabled {
     pointer-events: none;
 }
 
-.section .option_list .option .image{
+section .option_list .option .image {
     height: 26px;
     width: 26px;
     border: 2px solid transparent;
@@ -236,19 +246,19 @@ section{
     transition: all 0.3s ease;
     line-height: 24px;
 }
-.option_list .option .image.tick{
+.option_list .option .image.tick {
     color: #219c3e;
     border-color: #219c3e;
     background: #d4edda;
 }
 
-.option_list .option .image.cross{
+.option_list .option .image.cross {
     color: #a2202d;
     background: #f7dadd;
     border-color: #bc2f3d;
 }
 
-footer{
+footer {
     height: 57px;
     padding: 0 30px;
     display: flex;
@@ -257,21 +267,21 @@ footer{
     border-top: 1px solid lightgrey;
 }
 
-footer .total_que span{
+footer .total_que span {
     display: flex;
     user-select: none;
 }
 
-footer .total_que span p{
+footer .total_que span p {
     font-weight: 490;
     padding: 0 5px;
 }
 
-footer .total_que span p:first-child{
+footer .total_que span p:first-child {
     padding-left: 0px;
 }
 
-footer button{
+footer button {
     height: 40px;
     padding: 0 12px;
     font-size: 17px;
@@ -286,21 +296,21 @@ footer button{
     line-height: 10px;
     opacity: 0;
     pointer-events: none;
-    transform: scale(0.96);
+    transform: scale(0.95);
     transition: all 0.3s ease;
 }
 
-footer button:hover{
+footer button:hover {
     background: #0263ca;
 }
 
-footer button.show{
+footer button.show {
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);
 }
 
-.result_box{
+.result_box {
     background: #fff;
     border-radius: 5px;
     display: flex;
@@ -315,144 +325,62 @@ footer button.show{
     transition: all 0.3s ease;
 }
 
-.result_box .image{
+.result_box .image {
     font-size: 98px;
     color: #0179fa;
     margin-bottom: 10px;
 }
 
-.result_box .complete_text{
+.result_box .complete_text {
     font-size: 20px;
     font-weight: 498;
 }
 
-.result_box .score_text span{
+.result_box .score_text span {
     display: flex;
     margin: 10px 0;
     font-size: 18px;
     font-weight: 498;
 }
 
-.result_box .score_text span p{
+.result_box .score_text span p {
     padding: 0 4px;
     font-weight: 600;
 }
 
-.result_box .buttons{
+.result_box .buttons {
     display: flex;
     margin: 20px 0;
 }
 
-.result_box .buttons button{
+.result_box .buttons button {
     margin: 0 10px;
     height: 44px;
     padding: 0 20px;
     font-size: 18PX;
-    font-weight: 496;
+    font-weight: 500;
     cursor: pointer;
     border: none;
     outline: none;
     border-radius: 5px;
     border: 1px solid #047af9;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.buttons button.restart{
+.buttons button.restart {
     color: #fff;
     background: #007bff;
 }
 
-.buttons button.restart:hover{
+.buttons button.restart:hover {
     background: #026eda;
 }
 
-.buttons button.quit{
+.buttons button.end{
     color: #0279f9;
     background: #fff;
 }
-.buttons button.quit:hover{
+.buttons button.end:hover {
     color: #fff;
     background: #007afd;
-}
-
-
-
-/*::after {
-    box-sizing: border-box;
-}
-
-body {
-    background: #2a6072;
-}
-
-.main {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 2;
-    display: flex;
-    background: -webkit-linear-gradient(
-        to right,
-        #274172
-        #395e88
-    );
-}
-
-/* start button styling 
-.start-button {
-    padding: 2.5rem;
-    min-width: 13rem;
-    border-radius: 0.4rem;
-    font-size: 1.8rem;
-    letter-spacing: 0.3rem;
-    cursor: pointer;
-    background-color: var(--clr-blue);
-    font-size: 1.8rem;
-    color: var(--clr-white);
-    border: none;
-    transition: transform 0.2s ease-in-out;
-    outline: none;
-}
-
-/*rule section 
-.container-section
-#form .header .info-section {
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    font-weight: 600;
-
-}
-.header{
-    letter-spacing: 00.3rem;
-    height: 9rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: var(--clr-white);
-    border-radius: 00.4rem;
-    background-color: #8e7f7f;
-    background-image: linear-gradient(315deg, #0d0c0c, 0%, #545353, 74%);
-}
-
-/*.start-button,
-.header,
-.result-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    box-shadow: #2a6072;
-}
-.start-button {
-    letter-spacing: 0.3rem;
-    min-width: 12rem;
-    font-weight: bold;
-    padding: 2rem;
-    border: none;
-    border-radius: 00.3rem;
-    color: var(--clr-white);
-    background-color: var(--clr-blue);
-    cursor: pointer;
-    transition: trasform 0.2s;ease-in-out;
-    font-size: 1.6rem;
 }
